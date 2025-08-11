@@ -34,9 +34,9 @@ export default function Carousel() {
   }, [])
 
   return (
-    <section className="py-12 bg-gradient-to-r from-[#433a6f] via-[#625e8b] to-[#706e94]">
-      <div className="container mx-auto px-4">
-        <div className="relative h-[400px] md:h-[500px] lg:h-[600px] rounded-2xl overflow-hidden shadow-2xl" style={{ aspectRatio: '1600/771' }}>
+    <section className="py-12 bg-gradient-to-r from-[#433a6f] via-[#625e8b] to-[#706e94] overflow-hidden">
+      <div className=" mx-auto px-4">
+        <div className="relative h-auto md:h-auto lg:h-[600px] rounded-2xl overflow-hidden shadow-2xl" style={{ aspectRatio: '1600/771' }}>
           <AnimatePresence mode="wait">
             <motion.div
               key={currentSlide}
